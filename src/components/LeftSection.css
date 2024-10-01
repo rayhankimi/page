@@ -1,0 +1,31 @@
+.left-section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;       /* Memusatkan secara vertikal */
+    justify-content: center;   /* Memusatkan secara horizontal */
+    padding: 20px;             /* Opsional */
+}
+
+.square-image {
+    width: 100%;
+    max-width: 850px;          /* Sesuaikan lebar maksimal gambar */
+    height: auto;
+    object-fit: cover;
+    margin: 0;                 /* Pastikan tidak ada margin */
+    padding: 0;                /* Pastikan tidak ada padding */
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+    .left-section {
+        padding-left: 10px;
+    }
+
+    .square-image {
+        max-width: 400px;
+    }
+}

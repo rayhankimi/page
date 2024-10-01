@@ -1,0 +1,51 @@
+.card {
+    background-color: #f7f4e9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 750px; /* Updated width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #d53333;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.sun-icon {
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .card-content {
+        flex-direction: column; /* Stack the text and icon vertically */
+        align-items: flex-start; /* Align the content to the left */
+    }
+
+    .sun-icon {
+        margin-left: 0;
+        margin-top: 10px; /* Add margin on top when stacked vertically */
+    }
+}
