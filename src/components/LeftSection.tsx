@@ -1,5 +1,5 @@
 import React from 'react';
-import './LeftSection.css';
+import './styles/LeftSection.css';
 import squareImage from '../assets/aaa.jpg';
 
 const LeftSection: React.FC = () => {

@@ -2,8 +2,16 @@
     background-color: #f7f4e9;
     border-radius: 10px;
     padding: 20px;
-    width: 750px; /* Updated width */
+    max-width: 750px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.card-no-bg {
+    background: transparent;
+    box-shadow: none;
 }
 
 .card-content {
@@ -33,19 +41,18 @@
     margin-left: 20px;
 }
 
-
 @media (max-width: 768px) {
     .card {
         width: 100%;
     }
 
     .card-content {
-        flex-direction: column; /* Stack the text and icon vertically */
-        align-items: flex-start; /* Align the content to the left */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .sun-icon {
         margin-left: 0;
-        margin-top: 10px; /* Add margin on top when stacked vertically */
+        margin-top: 10px;
     }
 }
