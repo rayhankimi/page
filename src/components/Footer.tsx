@@ -6,9 +6,7 @@ const Footer: React.FC = () => {
     return (
         <footer className="footer">
             <p>&copy; {new Date().getFullYear()} Rayhan Kimi Nabiel Athallah.</p>
-            <p>Made using React with ☕ and 🤔 💭</p>
 
-            {/* Add GitHub logo and link */}
             <a
                 href="https://github.com/rayhankimi/page"
                 target="_blank"

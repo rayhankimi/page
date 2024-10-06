@@ -8,10 +8,8 @@ const RequestForm: React.FC = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
-        // Membuat link mailto
         const mailtoLink = `mailto:r4yhankimi@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(content)}`;
 
-        // Redirect ke mailto link
         window.location.href = mailtoLink;
     };
 

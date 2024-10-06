@@ -1,22 +1,22 @@
 import React from 'react';
-import './styles/Skill.css';
+import './styles/Projects.css';
 
-interface SkillList {
+interface ProjectList {
     message: string;
     techStack: string;
     emoji: string;
 }
 
 interface LatestRequestsProps {
-    skills: SkillList[];
+    projects: ProjectList[];
 }
 
-const Skill: React.FC<LatestRequestsProps> = ({ skills }) => {
+const Projects: React.FC<LatestRequestsProps> = ({ projects }) => {
     return (
         <div className="competencies">
-            <h2 className="title">LATEST REQUESTS</h2>
+            <h2 className="title">LATEST PROJECTS</h2>
             <div className="skill-list">
-                {skills.map((skills, index) => (
+                {projects.map((skills, index) => (
                     <div key={index} className="skill-item">
                         <div className="skill-message">{skills.message}</div>
                         <div className="skill-details">
@@ -30,4 +30,4 @@ const Skill: React.FC<LatestRequestsProps> = ({ skills }) => {
     );
 };
 
-export default Skill;
+export default Projects;

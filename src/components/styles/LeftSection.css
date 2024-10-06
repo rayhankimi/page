@@ -6,26 +6,37 @@
     display: flex;
     align-items: center;       /* Memusatkan secara vertikal */
     justify-content: center;   /* Memusatkan secara horizontal */
-    padding: 20px;             /* Opsional */
+    overflow: hidden;
 }
 
 .square-image {
-    width: 100%;
-    max-width: 850px;          /* Sesuaikan lebar maksimal gambar */
-    height: auto;
-    object-fit: cover;
-    margin: 0;                 /* Pastikan tidak ada margin */
-    padding: 0;                /* Pastikan tidak ada padding */
+
+    width: 60%;                /* Gambar memenuhi 60% dari lebar LeftSection */
+    height: auto;              /* Tinggi menyesuaikan secara proporsional */
+    object-fit: cover;         /* Gambar menutupi area yang ditentukan */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
 
+/* Kelas animasi tetap sama */
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
 
 /* Responsif */
 @media (max-width: 768px) {
     .left-section {
-        padding-left: 10px;
+        height: 400px;           /* Sesuaikan tinggi pada layar kecil */
     }
 
     .square-image {
-        max-width: 400px;
+        width: 80%;              /* Gambar memenuhi 80% pada layar kecil */
     }
 }
